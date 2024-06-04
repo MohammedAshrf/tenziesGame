@@ -1,0 +1,144 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* == Start main element == */
+main {
+  background-color: #f5f5f5;
+  min-width: 50vh;
+  min-height: 50vh;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.container {
+  margin: auto;
+  width: 300px;
+}
+
+.title {
+  font-family: Karla;
+  font-weight: 700;
+  font-size: 25.6px;
+  line-height: 29.93px;
+  text-align: center;
+}
+.description {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 13.11px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.numbers {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+.numbers > div {
+  flex-grow: 1;
+  flex-basis: 15%;
+  font-family: Karla;
+  font-weight: 700;
+  font-size: 20px;
+  color: #2b283a;
+  margin-top: 10px;
+  margin-right: 10px;
+  width: 30px;
+  height: 40px;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  border-radius: 6px;
+  letter-spacing: 1.5px;
+}
+
+.container button {
+  font-family: Karla;
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(80, 53, 255, 1);
+  width: 120px;
+  height: 40px;
+  padding: 5px;
+  margin-top: 20px;
+  border-radius: 4px;
+}
+
+.container button:focus {
+  outline: none;
+}
+
+.container button:active {
+  box-shadow: inset 0px 0px 6px 1px white;
+}
+
+.best-results {
+  margin-top: 10px;
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 30px;
+  background-color: #d4d4e9;
+  border-radius: 6px;
+}
+
+.best-results .least-rolls,
+.best-results .taken-time,
+.best-results .least-time {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.best-results span {
+  font-size: 18px;
+  font-weight: 400;
+  display: block;
+}
+/* == End main element == */
